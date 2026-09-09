@@ -68,7 +68,7 @@ function totalRevenue() {
 function highestValueOrder() {
     return orders.reduce((highest, order) =>
         calculateOrder(order).finalTotal >
-        calculateOrder(highest).finalTotal
+            calculateOrder(highest).finalTotal
             ? order
             : highest
     );
